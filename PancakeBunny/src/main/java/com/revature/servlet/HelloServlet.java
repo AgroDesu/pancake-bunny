@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 public class HelloServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		resp.setStatus(418);
 		resp.getWriter().write("I don't know what to say so here's a bunny with a pancake on its head.");
 	}
 }
